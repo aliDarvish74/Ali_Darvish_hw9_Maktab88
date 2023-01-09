@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#container {
+  width: 80%;
+  margin: 15px auto;
+}
+#progress {
+  position: relative;
+  text-align: center;
+  min-height: 40px;
+  line-height: 40px;
+  padding: 1px;
+  border: 1px solid rgb(153, 153, 153);
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+#bar {
+  position: absolute;
+  width: 9%;
+  height: 36px;
+  border-radius: 6px;
+  background-color: orange;
+  color: white;
+}
+
+#increaseProgress {
+  padding: 8px 16px;
+  border: none;
+  background-color: orange;
+  border-radius: 8px;
+  color: white;
+  transition: 0.2s;
+}
+#increaseProgress:hover {
+  background-color: rgb(199, 99, 0);
+  cursor: pointer;
+}
