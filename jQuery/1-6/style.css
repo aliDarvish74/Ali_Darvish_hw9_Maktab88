@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+
+#navBar {
+  display: flex;
+  width: 60%;
+  border-bottom: 1px solid black;
+  margin: 0 auto;
+}
+.navItem {
+  width: 100%;
+  background-color: orange;
+  padding: 5px 0;
+  position: relative;
+}
+
+.dropdown {
+  background-color: orange;
+  position: absolute;
+  width: 100%;
+  padding: 8px 0 0 0;
+}
+.d-none {
+  display: none;
+}
+.dropdownItem {
+  padding: 5px 0 0 0;
+}
