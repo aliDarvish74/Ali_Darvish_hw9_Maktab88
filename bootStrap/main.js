@@ -9,6 +9,7 @@ const pageActive = "page-link bg-warning border-dark text-dark";
 const pageDeactive = "page-link bg-dark border-dark text-warning";
 let selectedUser = null;
 let newUserData = userData;
+
 const generateProfileInformation = ({
   first_name,
   last_name,
@@ -36,7 +37,7 @@ const generateProfileInformation = ({
 };
 
 const showModalInformation = ({ first_name, last_name, id, email, avatar }) => {
-  userProfileModalTitle.innerText = `${first_name} ${last_name}'s User information`;
+  userProfileModalTitle.innerText = `${first_name} ${last_name}'s Profile`;
 
   const profileInfo = generateProfileInformation({
     first_name,
@@ -146,10 +147,10 @@ const pageRender = function (index, self) {
  */
 
 const filterUsers = function (self) {
-  const searchKey = self.value;
+  const searchKey = self.value.toLowerCase();
   newUserData = userData.filter((item) => {
     for (const value of Object.values(item)) {
-      if (value.toString().includes(searchKey)) {
+      if (value.toString().toLowerCase().includes(searchKey)) {
         return true;
       }
     }
