@@ -10,7 +10,6 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-
     <link rel="stylesheet" href="style.css" />
     <title>usersList</title>
   </head>
@@ -38,14 +37,14 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a
-                class="nav-link active text-warning"
+                class="nav-link active text-secondary"
                 aria-current="page"
                 href="./index.html"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-secondary" href="./About us.html"
+              <a class="nav-link text-warning" href="./About us.html"
                 >About us</a
               >
             </li>
@@ -56,7 +55,6 @@
               type="search"
               placeholder="Search"
               aria-label="Search"
-              onkeyup="filterUsers(this)"
             />
             <button class="btn btn-outline-warning" type="submit">
               Search
@@ -65,51 +63,37 @@
         </div>
       </div>
     </nav>
-    <!-- start: users list container -->
-    <div class="container-lg my-4">
-      <div class="row gy-4" id="usersList"></div>
-    </div>
-    <nav>
-      <ul
-        id="paginationContainer"
-        class="pagination justify-content-center"
-      ></ul>
-    </nav>
-    <!-- end: users list container -->
 
-    <!-- start: user profile modal -->
+    <!-- Content: START -->
     <div
-      class="modal fade"
-      id="userProfileModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
+      class="container bg-secondary my-3 p-3 text-justify rounded-3 text-light"
     >
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="userProfileModalTitle"></h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body" id="userProfileModalBody"></div>
-          <div class="modal-footer" id="userProfileModalFooter">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
+      <h3 class="h3">About Us</h3>
+      <p style="text-align: justify">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia quis
+        omnis quaerat consequatur esse aliquam enim porro dignissimos commodi
+        harum maxime at debitis magnam temporibus accusamus atque fuga,
+        reiciendis non ea laboriosam fugit rerum optio? Fugit recusandae quis
+        reprehenderit magni, quo expedita aspernatur exercitationem placeat
+        officiis repudiandae consequuntur similique quos, blanditiis incidunt.
+        Quis aspernatur iure tempora omnis assumenda aut necessitatibus beatae
+        deleniti sequi. Explicabo, nisi recusandae! Ex saepe alias modi vero
+        velit expedita deserunt mollitia cum sequi culpa molestias, officia
+        adipisci consectetur voluptatibus accusamus magnam? Non maiores atque
+        laboriosam fugit corrupti quod, ad praesentium sed natus, quaerat quia
+        enim quis officiis eius ex rem, accusamus consequatur! Aliquid aliquam
+        harum non quibusdam a, aperiam commodi deserunt voluptate corporis
+        doloribus sed nemo itaque magnam unde modi pariatur sit accusantium
+        officiis eveniet fuga dicta animi dolores tenetur voluptas? Aliquid
+        inventore ex possimus odio in voluptates debitis tenetur a quaerat fuga.
+        Nisi, non. Voluptatem vero iusto soluta eum atque officia, a magnam
+        facilis illum molestias ullam consequuntur dolorem consequatur. Veniam
+        incidunt quod, porro, voluptatem illo deserunt nostrum blanditiis iure
+        sed sequi commodi quos temporibus alias nobis quia voluptate rerum at!
+        Natus, qui modi eveniet, magni impedit nemo veniam quas non ipsa
+        sapiente repudiandae a?
+      </p>
     </div>
-    <!-- end: user profile modal -->
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
