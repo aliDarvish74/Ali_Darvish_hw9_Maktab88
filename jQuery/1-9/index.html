@@ -13,7 +13,45 @@
     <link rel="stylesheet" href="style.css" />
     <title>jQuery 1-9</title>
   </head>
-  <body></body>
+  <body class="bg-light">
+    <!-- User Data Table Start -->
+    <div class="container my-3">
+      <table class="table table-dark table-bordered table-hover table-striped">
+        <thead class="table-secondary"></thead>
+        <tbody class="table-group-divider"></tbody>
+      </table>
+      <div class="row justify-content-center">
+        <button
+          type="button"
+          id="createBtn"
+          class="btn btn-dark text-warning col-2"
+          onclick="renderCreateUser()"
+        >
+          Create User +
+        </button>
+      </div>
+    </div>
+    <!-- User Data Table end -->
+
+    <!-- User Info Modal Start -->
+
+    <div class="mod fs-6 py-5 col-12">
+      <div
+        class="mod-dialog w-50 mx-auto rounded border border-secondary bg-dark"
+      >
+        <div
+          class="mod-header bg-warning text-dark rounded-top container-fluid py-2"
+        ></div>
+        <div class="mod-body container-fluid text-light p-4"></div>
+        <div
+          class="mod-footer row mx-auto justify-content-center container-fluid text-light py-2 border-top border-secondary"
+        ></div>
+      </div>
+    </div>
+
+    <!-- User Info Modal end -->
+  </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="userData.js"></script>
   <script src="main.js"></script>
 </html>
